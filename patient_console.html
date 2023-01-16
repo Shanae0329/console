@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>網站標題</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body class="light-grey content" style="max-width:2000px">
+
+  <!-- Sidebar -->
+  <nav class="sidebar collapse white animate-left" style="z-index:3 ; width: 300px;" id="Sidebar"><br>
+    <div class="container">
+      <a href="#" onclick="close_bar()" class="right padding hover-blue hide-large" title="close menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <h2>網站標題</h2>
+    </div>
+    <div class="bar-block">
+      <a href="#Hemi-neglect" onclick="close_bar()" class="bar-item button padding blue hover-blue left "><i
+          class="fa fa-th-large fa-fw margin-right"></i>半側忽略症病患</a>
+      <a href="#Hand-Grip" onclick="close_bar()" class="bar-item button padding hover-blue"><i
+          class="fa fa-user fa-fw margin-right"></i>握力訓練病患</a>
+    </div>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="overlay" onclick="close_bar()" style="cursor:pointer"    title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="Hemi-neglect">
+      <div class="grid-container">
+        <div class="item1">
+          <span class="button hide-large hover-text-grey left" style="width:10% ;height:100%" onclick="open_bar()"><i
+            class="fa fa-bars"></i></span>
+        <input type="text" class="bar-item input white left searchbar" placeholder="搜尋病患">
+        <button class="bar-item button blue gobar hover-blue">Go</button>
+        </div>
+        <div class="item2">
+          <div class="bar light-grey white">
+            <button href="#" class="bar-item button white noticebar hover-blue border">通知</button>
+            <div class="dropdown" style="float:right;">
+              <button class="button white hover-blue"><i class="fa fa-photo"></i>醫生名字</button>
+              <div class="dropdown-content">
+                <a href="#" class="hover-blue">醫生1</a>
+                <a href="#" class="hover-blue">醫生2</a>
+                <a href="#" class="hover-blue">醫生3</a>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div>
+        
+      </div>
+  </div>
+  </header>
+
+  <!-- Main Grid-->
+  <div>
+    <div class="grid-container main" style="margin-left:300px">
+      <div class="item3" style="background-color: #f5f6fa !important;">
+        <div class="margin-bottom">
+          <div class="container">
+            <p><b>患者最初數據</b></p>
+            <p>生日</p>
+            <hr>
+            <p>發病日</p>
+            <hr>
+            <p>找到率</p>
+            <hr>
+            <p>最初數據</p>
+            <div class="fakeimg" style="height:500px;">最初數據圖片</div>
+          </div>
+        </div>
+      </div>
+      <div class="item4">
+        <div class="margin-bottom">
+          <div class="container white">
+            <p><b>患者復健數據</b></p>
+            <hr>
+            <p>畫面比例分配</p>
+            <hr>
+            <p>難度設定</p>
+            <hr>
+            <p>
+              <button class="button blue hover-blue padding-large margin-top margin-bottom">
+                <i class="fa fa-download margin-right"></i>儲存
+              </button>
+            </p>
+            <hr>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+
+
+
+
+  <script>
+    // Script to open and close sidebar
+    function open_bar() {
+      document.getElementById("Sidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function close_bar() {
+      document.getElementById("Sidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
