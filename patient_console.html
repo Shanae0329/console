@@ -42,7 +42,7 @@
   </nav>
 
   <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="overlay" onclick="close_bar()" style="cursor:pointer"    title="close side menu" id="myOverlay"></div>
+  <div class="overlay" onclick="close_bar()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
   <!-- !PAGE CONTENT! -->
   <div class="main" style="margin-left:300px">
@@ -52,87 +52,85 @@
       <div class="grid-container">
         <div class="item1">
           <span class="button hide-large hover-text-grey left" style="width:10% ;height:100%" onclick="open_bar()"><i
-            class="fa fa-bars"></i></span>
-        <input type="text" class="bar-item input white left searchbar" placeholder="搜尋病患">
-        <button class="bar-item button blue gobar hover-blue">Go</button>
+              class="fa fa-bars"></i></span>
+          <input type="text" class="bar-item input white left searchbar" placeholder="搜尋病患">
+          <button class="bar-item button blue gobar hover-blue">Go</button>
         </div>
         <div class="item2">
-          <div class="bar light-grey white">
-            <button href="#" class="bar-item button white noticebar hover-blue border">通知</button>
-            <div class="dropdown" style="float:right;">
-              <button class="button white hover-blue"><i class="fa fa-photo"></i>醫生名字</button>
-              <div class="dropdown-content">
-                <a href="#" class="hover-blue">醫生1</a>
-                <a href="#" class="hover-blue">醫生2</a>
-                <a href="#" class="hover-blue">醫生3</a>
+          <div class="bar light-grey">
+            <div style="float:right;">
+              <button href="#" class="bar-item button white noticebar hover-blue border w3-third">通知</button>
+              <div class="dropdown bar-item white noticebar hover-blue border w3-twothird" style="float:right;">
+                <button href="#" class="bar-item button hover-blue"><i class="fa fa-photo"></i>醫生名字</button>
+                <div class="dropdown-content w3-twothird">
+                  <a href="#" class="hover-blue">醫生1</a>
+                  <a href="#" class="hover-blue">醫生2</a>
+                  <a href="#" class="hover-blue">醫生3</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>  
+        </div>
       </div>
-      <div>
-        
-      </div>
-  </div>
-  </header>
+    </header>
 
-  <!-- Main Grid-->
-  <div>
-    <div class="grid-container main" style="margin-left:300px">
-      <div class="item3" style="background-color: #f5f6fa !important;">
-        <div class="margin-bottom">
-          <div class="container">
-            <p><b>患者最初數據</b></p>
-            <p>生日</p>
-            <hr>
-            <p>發病日</p>
-            <hr>
-            <p>找到率</p>
-            <hr>
-            <p>最初數據</p>
-            <div class="fakeimg" style="height:500px;">最初數據圖片</div>
+    <!-- Main Grid-->
+    <div>
+      <div class="grid-container main">
+        <div class="item3" style="background-color: #f5f6fa !important;">
+          <div class="margin-bottom">
+            <div class="container">
+              <p><b>患者最初數據</b></p>
+              <p>生日</p>
+              <hr>
+              <p>發病日</p>
+              <hr>
+              <p>找到率</p>
+              <hr>
+              <p>最初數據</p>
+              <div class="fakeimg" style="height:500px;">最初數據圖片</div>
+            </div>
+          </div>
+        </div>
+        <div class="item4">
+          <div class="margin-bottom">
+            <div class="container white">
+              <p><b>患者復健數據</b></p>
+              <hr>
+              <p>畫面比例分配</p>
+              <hr>
+              <p>難度設定</p>
+              <hr>
+              <p>
+                <button class="button blue hover-blue padding-large margin-top margin-bottom">
+                  <i class="fa fa-download margin-right"></i>儲存
+                </button>
+              </p>
+              <hr>
+            </div>
+
           </div>
         </div>
       </div>
-      <div class="item4">
-        <div class="margin-bottom">
-          <div class="container white">
-            <p><b>患者復健數據</b></p>
-            <hr>
-            <p>畫面比例分配</p>
-            <hr>
-            <p>難度設定</p>
-            <hr>
-            <p>
-              <button class="button blue hover-blue padding-large margin-top margin-bottom">
-                <i class="fa fa-download margin-right"></i>儲存
-              </button>
-            </p>
-            <hr>
-          </div>
-    
-        </div>
-      </div>
+
+
     </div>
-    
-
-  </div>
 
 
 
 
-  <script>
-    // Script to open and close sidebar
-    function open_bar() {
-      document.getElementById("Sidebar").style.display = "block";
-      document.getElementById("myOverlay").style.display = "block";
-    }
+    <script>
+      // Script to open and close sidebar
+      function open_bar() {
+        document.getElementById("Sidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
 
-    function close_bar() {
-      document.getElementById("Sidebar").style.display = "none";
-      document.getElementById("myOverlay").style.display = "none";
-    }
-  </script>
+      function close_bar() {
+        document.getElementById("Sidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+    </script>
 
 </body>
 
