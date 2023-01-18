@@ -2,7 +2,7 @@ html,
 body {
 	margin: 0px;
 	padding: 0px;
-	min-width: 500px;
+	min-width: 400px;
 }
 
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
@@ -174,7 +174,7 @@ html,body {
 
 	/* header */
 	.searchbar {
-		width: 69%;
+		width: 68%;
 		height: 100%;
 	}
 
