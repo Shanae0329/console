@@ -41,6 +41,10 @@ h2 {
 	font-weight: 600;
     margin: 10px 0;
 }
+.xlarge {
+    font-size: 20px!important;
+	margin: 10px 0;
+}
 
 html,body {
 	font-size: 15px;
@@ -96,6 +100,10 @@ html,body {
 
 	.item4 {
 		grid-column: 3/6;
+	}
+
+	.item-list {
+		grid-column: 1/21;
 	}
 
 	/* header */
@@ -208,6 +216,13 @@ html,body {
 	overflow: auto;
 }
 
+.patient-list-grid{
+	height: 100%;
+	background-color: #f5f6fa !important;
+	min-height: 920px;
+	overflow: auto;
+}
+
 .overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
 
 .button {
@@ -269,7 +284,21 @@ html,body {
 
 .container,
 .panel {
-	padding: 0.01em 16px;
+	padding: 1em 30px;
+}
+
+.item-list-detail{
+	padding-top: 16px!important;
+    padding-bottom: 25px!important;
+	box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+	background-color: #fff !important;
+	margin:10px;
+}
+.item-list-img{
+	width: 35px;
+	float: left!important;
+	border-radius: 50%;
+	margin-right: 16px!important;
 }
 
 /* animate */
@@ -277,6 +306,22 @@ html,body {
 	position: relative;
 	animation: animateleft 0.4s;
 }
+
+/* Style the tablink (and add height:100% for full page content) */
+.tablink {
+	background-color: white;
+	color: black;
+  }
+  
+  .tablink:hover {
+	color: white;
+	background-color: #4980ff;
+  }
+/* Style the tab content*/
+.tabcontent {
+	display: none;
+	height: 100%;
+  }
 
 /* dropdown */
 .dropbtn {
@@ -311,4 +356,3 @@ html,body {
   
   .dropdown-content a:hover {background-color: #f1f1f1;}
   .dropdown:hover .dropdown-content {display: block;}
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
